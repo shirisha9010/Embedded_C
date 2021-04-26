@@ -8,8 +8,18 @@ BUILD_DIR = Build
 MAIN=project_main.c
 SRC = $(wildcard src/* .c) $(MAIN)
 
+#Object copy to create hexfile
+OBJCOPY = avr-objcopy.exe
+
+
 # All header file paths
 INC = -I inc
+
+#Avrdude
+AVRDUDE := avrdude
+
+#Options for HEX file generation
+HFLAGS = -j .text -j .data -O ihex
 
 # Find out the OS and configure the variables accordingly
 ifdef OS	                    # All configurations for Windwos OS
@@ -24,7 +34,7 @@ ifdef OS	                    # All configurations for Windwos OS
 else #All configurations for Linux OS
    ifeq ($(shell uname), Linux)
    	  # Delete command
-      RM = rm -rf				
+      RM = rm -rf 			
 	  # Correct the path based on OS
       FixPath = $1				
 	  # Name of the compiler used
@@ -41,6 +51,10 @@ all:$(BUILD_DIR)
 	# Compile the code and generate the ELF file
 	$(CC) -g -Wall -Os -mmcu=atmega328  $(INC) $(SRC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).elf)
 
+hex: $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).elf)
+	#create hex file
+	$(OBJCOPY) $(HFLAGS) $< $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).hex)
+
 $(BUILD_DIR):
 	# Create directory to store the built files
 	mkdir $(BUILD_DIR)
@@ -52,9 +66,11 @@ analysis: $(SRC)
 doc:
 	#Build the code code documentation using Doxygen command line utility
 	make -C documentation
+	make -C documentation doc
 
 clean:
 	# Remove all the build files and generated document files
-	$(RM) $(call FixPath,$(BUILD_DIR)/*)
+	$(RM) -rf $(call FixPath,$(BUILD_DIR)/*)
 	make -C documentation clean
 	rmdir $(BUILD_DIR)
+	
