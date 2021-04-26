@@ -3,15 +3,17 @@ PROJ_NAME = Blinky
 BUILD_DIR = Build
 
 # All Source code files
-SRC = project_main.c\
-src/user_utils.c
+# SRC = project_main.c\
+# src/user_utils.c
+MAIN=project_main.c
+SRC = $(wildcard src/* .c) $(MAIN)
 
 # All header file paths
 INC = -I inc
 
 # Find out the OS and configure the variables accordingly
-ifdef OS	# All configurations for Windwos OS
-   # Delete command 
+ifdef OS	                    # All configurations for Windwos OS
+    # Delete command 
    RM = del /q
    # Correct the path based on OS
    FixPath = $(subst /,\,$1)
