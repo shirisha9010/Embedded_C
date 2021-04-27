@@ -91,4 +91,3 @@ PORTD|=(1<<PD4);  // setting the bit
 
     return 0;
 }
-
