@@ -1,12 +1,13 @@
+![0_0](https://user-images.githubusercontent.com/82135750/116238022-80968c80-a77e-11eb-9a9b-c7c5cf71a724.png)
+![1_1](https://user-images.githubusercontent.com/82135750/116238108-9a37d400-a77e-11eb-8c69-375c4813ab44.png)
 # Embedded C Programming for activity1
 
 # Activity1 For heater is on or off by using led 
 
 ## In Action
-![when Seat is empty heater is off led will not glow(0,0)](https://user-images.githubusercontent.com/62949244/116204509-7793c400-a75a-11eb-9112-2ad591a747e2.png)
-![when is seat id full heater is on led will glow(1,1)](https://user-images.githubusercontent.com/62949244/116204560-84b0b300-a75a-11eb-9377-3bf90dac8bbb.png)
-![when is seat is full but heater is off led will not glow(0,1)](https://user-images.githubusercontent.com/62949244/116204623-96925600-a75a-11eb-9ea8-29040092cef2.png)
-![when is seat is empty and heater is on led is off (1,0)](https://user-images.githubusercontent.com/62949244/116204692-a27e1800-a75a-11eb-9dab-5072600cd398.png)
+![0_0](https://user-images.githubusercontent.com/82135750/116245687-d53e0580-a786-11eb-8e7d-e9920f669928.png)
+![1_1](https://user-images.githubusercontent.com/82135750/116245707-d96a2300-a786-11eb-8caf-d02bd3230f13.png)
+![1_0](https://user-images.githubusercontent.com/82135750/116245741-df600400-a786-11eb-8ba3-792bba9c52d9.png)
 
 
 #### CI and Code Quality
