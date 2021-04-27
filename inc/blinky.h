@@ -22,9 +22,7 @@
 
 #define AVR_ATmega328
 
-/**
- * Include files
- */ 
+
 #include <avr/io.h>
 
 /**
