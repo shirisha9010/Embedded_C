@@ -1,12 +1,14 @@
-PROJ_NAME = Blinky
+PROJ_NAME = SeatHeating
 
 BUILD_DIR = Build
 
 # All Source code files
-# SRC = project_main.c\
-# src/user_utils.c
-MAIN=project_main.c
-SRC = $(wildcard src/* .c) $(MAIN)
+SRC = src/activity1.c\
+src/activity2.c\
+src/activity3.c\
+src/activity4.c\
+SeatHeatingMain.c
+
 
 #Object copy to create hexfile
 OBJCOPY = avr-objcopy.exe
@@ -70,6 +72,7 @@ doc:
 
 clean:
 	# Remove all the build files and generated document files
-	$(RM) -rf $(call FixPath,$(BUILD_DIR)/*)
+	$(RM) -rf build $(call FixPath,$(BUILD_DIR)/*)
 	make -C documentation clean
 	rmdir $(BUILD_DIR)
+	
