@@ -1,16 +1,16 @@
 /**
- * @file activity3.h
- * @author Shirisha 
+ * @file act3.h
+ * @author sHIRISHAs 
  * @brief 
  * @version 0.1
- * @date 2021-04-30
+ * @date 2021-04-29
  * 
  * @copyright Copyright (c) 2021
  * 
  */
 
-#ifndef _ACTIVITY3_H
-#define _ACTIVITY3_H
+#ifndef _ACT3_H
+#define _ACT3_H
 
 #include<avr/io.h>
 #include <util/delay.h>

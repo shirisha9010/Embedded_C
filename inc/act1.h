@@ -1,6 +1,6 @@
 /**
- * @file activity1.h
- * @author Shirisha 
+ * @file act1.h
+ * @author SHIRISHA
  * @brief 
  * @version 0.1
  * @date 2021-04-30
@@ -9,8 +9,8 @@
  * 
  */ 
 
-#ifndef _ACTIVITY1_H
-#define _ACTIVITY1_H
+#ifndef _ACT1_H
+#define _ACT1_H
 
 #define AVR_ATmega328
 
@@ -38,9 +38,9 @@
  * @brief A macro to turn off the LED
  * 
  */
-#define CLEAN_LED PORTD&=~(1<<PD6)
+#define CLEAR_LED PORTD&=~(1<<PD6)
 
 void Buttons_LED_Init();
 
 
-#endif //ACTIVITY1_H_INCLUDED 
+#endif //ACT1_H_INCLUDED 

@@ -1,15 +1,15 @@
 /**
- * @file activity4.c
- * @author Shirisha
+ * @file act4.c
+ * @author SHIRISHA
  * @brief serial communication is implemented
  * @version 0.1
- * @date 2021-04-30
+ * @date 2021-04-29
  * 
  * @copyright Copyright (c) 2021
  * 
  */
 #include<avr/io.h>
-#include"activity4.h"
+#include"act4.h"
 
 /**
  * @brief A program to initialize the UART serial communication

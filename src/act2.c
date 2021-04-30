@@ -1,15 +1,16 @@
 /**
- * @file activity2.c
- * @author shirisha ()
+ * @file act2.c
+ * @author SHIRISHA
  * @brief 
  * @version 0.1
- * @date 2021-04-30
+ * @date 2021-04-28
  * 
  * @copyright Copyright (c) 2021
  * 
  */
+
 #include<avr/io.h>
-#include"activity2.h"
+#include<act2.h>
 /**
  * @brief A function to initialise the analog to digital converter
  * 

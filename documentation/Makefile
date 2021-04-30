@@ -1,7 +1,7 @@
 <<<<<<< HEAD
 DOXY_FILE = SeatHeating
 =======
-DOXY_FILE = Blinky
+DOXY_FILE = SeatHeating
 BUILD_FILE = html
 
 FixPath = $(subst /,\,$1)

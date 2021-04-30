@@ -1,16 +1,16 @@
 /**
- * @file activity4.h
- * @author Shirisha
+ * @file act4.h
+ * @author sHIRISHA
  * @brief 
  * @version 0.1
- * @date 2021-04-30
+ * @date 2021-04-29
  * 
  * @copyright Copyright (c) 2021
  * 
  */
 
-#ifndef _ACTIVITY4_H
-#define _ACTIVITY4_H
+#ifndef _ACT4_H
+#define _ACT4_H
 
 #include <avr/io.h>
 #include <util/delay.h>

@@ -1,20 +1,18 @@
 /**
- * @file activity1.h
- * @author shirisha (you@domain.com)
+ * @file act1.h
+ * @author Nam (you@domain.com)
  * @brief 
  * @version 0.1
  * @date 2021-04-27
  * 
  * @copyright Copyright (c) 2021
  * 
- * 
- * 
  */
 
-#include "activity1.h"
-#include "activity2.h"
-#include "activity3.h"
-#include "activity4.h"
+#include "act1.h"
+#include "act2.h"
+#include "act3.h"
+#include "act4.h"
 #include <util/delay.h>
 
 int main(void){
@@ -27,11 +25,11 @@ int main(void){
     TCCR1B|=(1<<WGM12)|(1<<CS11)|(1<<CS10);     //8 prescalar
     DDRB|=(1<<PB1);                             //Setting PB1 as output pin
 
-    LED_Init();
+    Buttons_LED_Init();
     InitADC();     //Initialise the ADC
     UARTinit(103);
     
-    uint16_t tempt;
+    uint16_t temp;
     char data;
     
     while(1)
@@ -42,7 +40,7 @@ int main(void){
             {
                  SET_LED;           // LED is ON
                 temp=ReadADC(0);
-                data=PWM(tempt);
+                data=PWM(temp);
                 UARTwritecharacter(data);
                 _delay_ms(20);
             }
@@ -50,12 +48,12 @@ int main(void){
             {
                 _delay_ms(20);
                 OCR1A = 0; //make PWM output 0 if switch is off
-                CLEAN_LED;  // LED is OFF
+                CLEAR_LED;  // LED is OFF
             }
         }
         else
         {
-            CLEAN_LED;  // LED is OFF
+            CLEAR_LED;  // LED is OFF
             OCR1A = 0; //make PWM output 0 if switch is off
             _delay_ms(20);
         }
