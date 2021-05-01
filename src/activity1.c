@@ -19,9 +19,10 @@
 void Buttons_LED_Init()
 {
      /*Configure LED and Switch pins*/
-    DDRD|=(1<<PD6);
-    DDRD&=~(1<<PD0);
-    PORTD|=(1<<PD0);
-    DDRD&=~(1<<PD4);
-    PORTD|=(1<<PD4);
+DDRB|=(1<<PB0);
+DDRD&=~(1<<PD0); //clear bit 6 of DDR B
+PORTD|=(1<<PD0); //Set bit 6 of Port B
+DDRD&=~(1<<PD1); //clear bit 7 of DDR B
+PORTD|=(1<<PD1);
+}
 }
