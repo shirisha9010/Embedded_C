@@ -1,6 +1,6 @@
 /**
- * @file act3.h
- * @author sHIRISHAs 
+ * @file activity3.h
+ * @author sHIRISHA 
  * @brief 
  * @version 0.1
  * @date 2021-04-29
@@ -16,7 +16,7 @@
 #include <util/delay.h>
 
 /**
- * @brief A function which receives 10 bit of ADC input from temperature sensor and outputs as a fast PWM waveform.
+ * @brief A function which receives 10 bit of ADC input from temperature sensor and outputs as a fast PWM waveform output.
  * 
  * @param ADC_val 
  */

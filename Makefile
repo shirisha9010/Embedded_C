@@ -3,10 +3,10 @@ PROJ_NAME = SeatHeating
 BUILD_DIR = Build
 
 # All Source code files
-SRC = src/act1.c\
-src/act2.c\
-src/act3.c\
-src/act4.c\
+SRC = src/activity1.c\
+src/activity2.c\
+src/activity3.c\
+src/activity4.c\
 SeatHeatingMain.c
 
 

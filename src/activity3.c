@@ -1,5 +1,5 @@
 /**
- * @file act3.c
+ * @file activity3.c
  * @author SHIRISHA
  * @brief 
  * @version 0.1
@@ -9,7 +9,7 @@
  * 
  */
 #include<avr/io.h>
-#include<act3.h>
+#include<activity3.h>
 
 /**
  * @brief A function which receives 10 bit of ADC input from temperature sensor and outputs as a fast PWM waveform.

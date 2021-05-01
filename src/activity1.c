@@ -1,5 +1,5 @@
 /**
- * @file act1.c
+ * @file activity1.c
  * @author SHIRISHA
  * @brief 
  * @version 0.1
@@ -10,7 +10,7 @@
  */
 #include <avr/io.h>
 #include <util/delay.h>
-#include "act1.h"
+#include "activity1.h"
 
 /**
  * @brief A function to operate the button and heater sensor

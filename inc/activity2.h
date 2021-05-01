@@ -1,5 +1,5 @@
 /**
- * @file act2.h
+ * @file activity2.h
  * @author SHIRISHA
  * @brief 
  * @version 0.1
